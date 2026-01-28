@@ -1,0 +1,6 @@
+:80 {
+  reverse_proxy /passwords/* vaultwarden:80
+  reverse_proxy /tickets/* osticket:80
+  reverse_proxy /files/* syncthing:8384
+  reverse_proxy /pdf/* bentopdf:80
+}
