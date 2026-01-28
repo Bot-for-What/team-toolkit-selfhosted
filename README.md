@@ -36,7 +36,29 @@ Prerequisites:
 
 ```bash
 git clone https://github.com/bot-for-what/team-toolkit-selfhosted.git
+
 cd team-toolkit-selfhosted
 
 docker compose up -d
+```
+
+---
+
+For clients
+-----------
+
+Once this toolkit is deployed on your server, you will typically get:
+
+- One URL for everything, for example: `http://your-server/`
+- Simple paths for each tool:
+  - Passwords: `http://your-server/passwords`
+  - Helpdesk: `http://your-server/tickets`
+  - File sync: `http://your-server/files`
+  - PDF tools: `http://your-server/pdf`
+- A single IT contact (your MSP/IT partner) who manages backups, updates, and access for all tools.
+
+Ask your IT partner for:
+- Your toolkit URL
+- Who can access which tool
+- How backups and password recovery are handled
 
